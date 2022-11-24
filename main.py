@@ -10,7 +10,7 @@ def index():
     url = 'https://www.youtube.com/watch?v=E_5d-jPeIVg'
     youtube = pytube.YouTube(url)
     youtube.streams.filter(res="144p").first().download()
-    return jsonify({"Choo Choo": "Welcome to your Flask app 🚅"})
+    return ("done")
 
 
 if __name__ == '__main__':
